@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CuppiMaths" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+       <item name="colorPrimary">@color/white</item>
+    </style>
+
+
+    <style name="Theme.CuppiMaths" parent="Base.Theme.CuppiMaths" />
+
+    <style name = "App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/pale_green</item>
+    </style>
+</resources>

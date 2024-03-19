@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_Contact"
+            android:icon="@drawable/baseline_call_24"
+            android:title="Contact Us"/>
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/baseline_privacy_tip_24"
+            android:title="Privacy policy"/>
+
+        <item
+            android:id="@+id/nav_Terms"
+            android:icon="@drawable/baseline_playlist_add_check_circle_24"
+            android:title="Terms condition"/>
+
+    </group>
+
+    <item
+        android:title="more">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/baseline_share_24"
+                android:title="Share"/>
+        </menu>
+    </item>
+
+</menu>
