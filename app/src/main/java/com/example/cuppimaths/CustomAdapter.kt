@@ -109,6 +109,7 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
                     val context = itemView.context
                     when (position) {
                         0 -> openFragment(context, HomeIntroFragment())
+                        1 -> openFragment(context, HomePastPapersClickEnglishOrSinhalaFragment())
                         // Add other cases for different positions if needed
                     }
                 }
@@ -123,6 +124,15 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
                 .commit()
         }
 
+//        fun handleBackNavigation(activity: AppCompatActivity): Boolean {
+//            val fragmentManager = activity.supportFragmentManager
+//            return if (fragmentManager.backStackEntryCount > 0) {
+//                fragmentManager.popBackStack()
+//                true
+//            } else {
+//                false
+//            }
+//        }
 
 
         fun bind(

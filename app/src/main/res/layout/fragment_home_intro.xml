@@ -79,7 +79,7 @@
                     android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/baseline_star_purple500_24" />
+                    android:src="@drawable/baseline_star_24" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                     android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/baseline_star_purple500_24" />
+                    android:src="@drawable/baseline_star_24" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -179,7 +179,7 @@
                     android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/baseline_star_purple500_24" />
+                    android:src="@drawable/baseline_star_24" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -229,7 +229,7 @@
                     android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/baseline_star_purple500_24" />
+                    android:src="@drawable/baseline_star_24" />
 
                 <TextView
                     android:layout_width="match_parent"

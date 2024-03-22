@@ -17,6 +17,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@color/white"
+        app:defaultNavHost="true"
         android:padding="4dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="0dp">

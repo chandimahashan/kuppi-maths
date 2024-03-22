@@ -1,22 +1,22 @@
 package com.example.cuppimaths
 
-import android.app.ActivityManager
-import android.os.Binder
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.cuppimaths.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+
 
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener  {
 
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     private lateinit var binding:ActivityMainBinding
     private lateinit var homeIntroCard:CardView
 
+    var btnBack: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         binding.navigationDrawer.setNavigationItemSelectedListener(this)
 
         binding.bottomNavigation.background =null
-       // binding.bottomNavigation.itemActiveIndicatorColor=null
+        binding.bottomNavigation.itemActiveIndicatorColor=null
         binding.bottomNavigation.setOnItemSelectedListener{
                 item ->
             when(item.itemId){
@@ -63,6 +64,9 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         }
         fragmentManager = supportFragmentManager
         openFragment(HomeFragment())
+
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -89,5 +93,6 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         fragmentTransaction.replace(R.id.fragment_container,fragment)
         fragmentTransaction.commit()
     }
+
 
 }
